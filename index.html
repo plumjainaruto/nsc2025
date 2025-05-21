@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSummary - AI Study Assistant</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS (link to external file) -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-brain me-2"></i>SmartSummary
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Intro Section -->
+        <div class="intro-section">
+            <h1>Transform Your Study Materials into Smart Summaries</h1>
+            <p>Upload any document or image and get AI-powered study summaries in seconds.</p>
+        </div>
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <div class="upload-box">
+                <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                <h3 class="upload-text">Drag & Drop or Click to Upload</h3>
+                <p class="upload-subtext">Supports PDF, DOCX, JPG, PNG (Max 20MB)</p>
+                <input type="file" id="file-upload" class="d-none">
+                <button class="btn btn-primary mt-3">Choose File</button>
+            </div>
+        </div>
+
+        <!-- Format Options -->
+        <div class="text-center mb-3">
+            <h4>Choose Summary Format</h4>
+        </div>
+        <div class="format-options">
+            <button class="format-btn active">
+                <i class="fas fa-list"></i>Bullet Points
+            </button>
+            <button class="format-btn">
+                <i class="fas fa-project-diagram"></i>Mind Map
+            </button>
+            <button class="format-btn">
+                <i class="fas fa-copy"></i>Flashcards
+            </button>
+            <button class="format-btn">
+                <i class="fas fa-question-circle"></i>Quiz
+            </button>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section">
+            <div class="results-header">
+                <h5 class="results-title">Summary Results</h5>
+                <div class="results-actions">
+                    <button><i class="fas fa-download me-1"></i> Download</button>
+                    <button><i class="fas fa-copy me-1"></i> Copy</button>
+                    <button><i class="fas fa-share-alt me-1"></i> Share</button>
+                </div>
+            </div>
+            <div class="results-content bullet-point-result">
+              <ul>
+                        <li><strong>T Cell:</strong> มีบทบาทสำคัญในระบบภูมิคุ้มกัน โดยเฉพาะ Cytotoxic T cell (CTL หรือ CD8⁺ T cell) ทำหน้าที่ตรวจจับและทำลายเซลล์ที่ติดเชื้อไวรัสหรือเซลล์ที่มีความผิดปกติ</li>
+                        <li><strong>การทำงานของ T Cell:</strong> เมื่อ CTL จับกับเซลล์เป้าหมายที่แสดง antigen ร่วมกับ MHC Class I จะกระตุ้นให้เซลล์นั้นเข้าสู่กระบวนการ apoptosis (การตายแบบมีการควบคุม)</li>
+                        <li><strong>B Cell:</strong> มีบทบาทหลักในการสร้างแอนติบอดี (Antibody) เพื่อต่อต้านเชื้อโรค</li>
+                        <li><strong>กระบวนการทำงาน:</strong> APC (เช่น แมคโครฟาจ) นำเสนอแอนติเจนให้กับ Helper T cell ซึ่งจะกระตุ้น B cell ให้สร้างแอนติบอดี</li>
+                        <li><strong>แอนติบอดี:</strong> โปรตีนที่สร้างโดย B cell ทำหน้าที่จับกับสิ่งแปลกปลอมและช่วยกำจัดออกจากร่างกาย</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Help Center</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-copyright">
+                © 2025 SmartSummary. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+
+## สรุปเทคโนโลยีที่ใช้พัฒนา SmartSummary
+
+| ส่วนงาน                    | เทคโนโลยีที่แนะนำ                                                                                                                                      | คำอธิบาย / เหตุผล                                                                                         |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| **Frontend**               | - React.js + Tailwind CSS (แนะนำสำหรับโปรเจคขนาดกลาง-ใหญ่)  <br> หรือ <br> - HTML + CSS + JavaScript + Bootstrap (สำหรับโปรเจคเริ่มต้น / เรียนรู้เร็ว) | React + Tailwind ให้ UI โมเดิร์น, ยืดหยุ่นสูง, Responsive<br>Bootstrap เหมาะกับ UI เรียบง่าย เริ่มต้นเร็ว |
+| **OCR (อ่านภาพ)**          | - Tesseract.js (ใน Browser) <br> หรือ <br> - Google Cloud Vision API (Backend)                                                                         | Tesseract.js ฟรี ใช้งานง่าย<br>Google Vision API แม่นยำกว่า และรองรับไฟล์หลายประเภท                       |
+| **AI สรุปเนื้อหา**         | OpenAI GPT API (เช่น GPT-4)                                                                                                                            | สร้างสรุปบทเรียน, Mind Map, Flashcards, Quiz ด้วย AI ระดับสูง                                             |
+| **Backend API**            | Node.js + Express                                                                                                                                      | เบา, ทำงานเร็ว, เชื่อมต่อ API ได้ง่าย                                                                     |
+| **Authentication**         | Firebase Authentication                                                                                                                                | ระบบล็อกอินพร้อมใช้งาน รองรับ Social Login                                                                |
+| **Database**               | Firebase Firestore หรือ MongoDB Atlas                                                                                                                  | เก็บข้อมูลผู้ใช้, สรุปบทเรียน, ประวัติการใช้งานแบบ Real-time                                              |
+| **Hosting / Deployment**   | Vercel (Frontend), Railway / Render (Backend)                                                                                                          | รวดเร็ว, ติดตั้งง่าย, ฟรีระดับเริ่มต้น                                                                    |
+| **Styling / UI Framework** | Tailwind CSS หรือ Bootstrap                                                                                                                            | Tailwind ยืดหยุ่นสูง, Bootstrap ใช้งานง่ายพร้อม UI สวยงาม                                                 |
+| **Version Control / CI**   | Git + GitHub + GitHub Actions                                                                                                                          | บริหารโค้ดและ Deployment อัตโนมัติ                                                                        |
+
+---
+
+### หมายเหตุ
+
+* หากเริ่มต้นเพื่อทดลองใช้งานหรือพัฒนาโปรเจคเล็ก-กลาง ใช้ HTML + Bootstrap + JavaScript ก็เพียงพอและง่ายต่อการเริ่มต้น
+* หากต้องการความยืดหยุ่นและระบบขนาดใหญ่ ควรใช้ React + Tailwind CSS และแยก Backend API โดย Node.js
+* OCR แบบ client-side ด้วย Tesseract.js เหมาะกับเอกสารภาพพื้นฐาน แต่ถ้าต้องการแม่นยำสูงหรือไฟล์เอกสารหลากหลาย แนะนำใช้ OCR บน server-side (Google Vision API)
+
+---
+
+ถ้าต้องการ ผมสามารถช่วยออกแบบโครงสร้างโค้ด หรือจัดทำตัวอย่างสำหรับแต่ละเทคโนโลยีให้ด้วยครับ!
